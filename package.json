@@ -1,0 +1,28 @@
+{
+  "name": "userauthentication",
+  "version": "1.0.0",
+  "description": "This is a user authentication system built Node.js (Express), Passport.js, MongooseDB, Bcrypt, and Ejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenludiaz/UserAuthentication.git"
+  },
+  "author": "KLD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenludiaz/UserAuthentication/issues"
+  },
+  "homepage": "https://github.com/Kenludiaz/UserAuthentication#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5",
+    "nodemon": "^2.0.4"
+  }
+}
