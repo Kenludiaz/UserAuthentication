@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const app = express();
+const users = require('./route/users.route')
 
-router.get('/', (req, res) => {
-    res.render('Welcome');
+app.use(users, "/");
+
+app.listen(3000, () => {
+    console.log("App displayed in Port 3000");
 })
-co

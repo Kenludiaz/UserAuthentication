@@ -4,7 +4,9 @@
   "description": "This is a user authentication system built Node.js (Express), Passport.js, MongooseDB, Bcrypt, and Ejs.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon index.js",
+    "serverstart": "DEBUG=UserAuthentication:* npm start"
   },
   "repository": {
     "type": "git",
