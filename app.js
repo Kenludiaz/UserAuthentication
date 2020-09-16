@@ -2,10 +2,15 @@ const express = require('express');
 const app = express();
 const users = require('./route/users.route');
 const mongoose = require('mongoose');
+const userRoute = require("./route/users.route");
 
+if (!config.get("myprivatekey")) {
+    console.error("Fatal error: myprivatekey is not defined.");
+    process.exit(1);
+}
 
-// ========Middleware========
-app.use('/', users);
+app.use(express.json());
+app.use("/api/users", userRoute);
 
 
 
